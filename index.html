@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BONKA BANK - Mema ta financiară</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <h1 class="logo">BONKA<span> BANK</span></h1>
+            <nav>
+                <a href="desprenoi.html" class="nav-link">Despre noi</a>
+                <a href="#recenzii" class="nav-link">Recenzii</a>
+                <a href="#loan" class="nav-link">Cere Bonka</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="intro">
+                <h2>Memește-ți viața financiară!</h2>
+                <p>Ai nevoie de bonka? Ai meme-uri tari? Fă parte din povestea <span class="highlight">Mezar's Debt Book</span>.<br>
+                    E doar o glumă... sau nu? Te ajutăm să trăiești bancar ca Mezar.</p>
+                <button class="primary-btn" onclick="scrollToForm()">Vreau Bonka!</button>
+            </section>
+
+            <!-- CARUSEL RECENZII -->
+            <section id="recenzii" class="reviews-carousel">
+                <h3>Recenzii de la praduitori</h3>
+                <div class="carousel">
+                    
+                    <div class="review-card">
+                        <img src="JAX1.png" alt="Jax 'Flex' R." class="review-img">
+                        <h4>Jax “Flex” R.</h4>
+                        <p class="review-text">“Bro, Bonka Bank mi-a dat cashback pe tot ce am cumpărat în timp ce beam cafea. Legit, m-am simțit ca Elon, dar fără rocket. 🚀💸”</p>
+                    </div>
+
+                    <div class="review-card">
+                        <img src="TIA1.png" alt="Tia 'Spicy' M." class="review-img">
+                        <h4>Tia “Spicy” M.</h4>
+                        <p class="review-text">“Bonka Bank e ca acel friend care îți dă bani fără să te judece că ai mâncat 10 pizza într-o zi. 10/10, recomand să-ți faci cont aici și să-ți trăiești fantasy-ul financiar. 🍕💳✨”</p>
+                    </div>
+
+                    <div class="review-card">
+                        <img src="LEO1.png" alt="Leo 'Chillax' K." class="review-img">
+                        <h4>Leo “Chillax” K.</h4>
+                        <p class="review-text">“Nu credeam că o bancă poate fi cool, dar Bonka Bank e exact genul de vibe care merge cu meme-urile mele de la 3 dimineața. Contul meu e mereu în verde, mood forever. 😎💵”</p>
+                    </div>
+
+                </div>
+            </section>
+            <!-- FINAL CARUSEL -->
+
+            <<section id="loan" class="loan-form">
+    <h3>Cere Bonka ⚡</h3>
+    <form action="multumim.html" method="get">
+        <input type="text" placeholder="Numele tau de meme" required>
+        <input type="number" placeholder="Câte Bonka vrei?" min="10" max="999999" required>
+        <select>
+            <option>Timezone-ul tău preferat</option>
+            <option value="GMT">GMT</option>
+            <option value="Bucharest">Bucharest</option>
+            <option value="NY">New York</option>
+        </select>
+        <input type="text" placeholder="Meme preferat">
+        <button class="primary-btn" type="submit">Aplică</button>
+    </form>
+</section>
+
+
+        <footer>
+            <p>&copy; 2025 BONKA BANK. Meme și bonkas din plin.</p>
+        </footer>
+    </div>
+
+    <script>
+    // Scroll la formular
+    function scrollToForm() {
+        document.getElementById('loan').scrollIntoView({behavior: 'smooth'});
+    }
+    </script>
+</body>
+</html>
